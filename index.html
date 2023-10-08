@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civic Issue Reporter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Report Civic Issue</h1>
+      <form id="issueForm">
+        <label for="issueType">Issue Type:</label>
+        <select id="issueType" name="issueType">
+          <option value="Broken Streetlight">Broken Streetlight</option>
+          <option value="Road Quality">Road Quality</option>
+          <option value="Water Quality">Water Quality</option>
+          <option value="Air Quality">Air Quality</option>
+          <option value="Traffic Congestion">Traffic Congestion</option>
+          <option value="Noise Pollution">Noise Pollution</option></select
+        ><br />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required /><br />
+
+        <label for="description">Description:</label><br />
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
